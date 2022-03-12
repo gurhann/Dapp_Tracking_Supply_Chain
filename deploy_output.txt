@@ -1,0 +1,492 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module './uws_win32_x64_72.node'
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\coffeaccesscontrol\ConsumerRole.sol
+> Compiling .\contracts\coffeaccesscontrol\DistributorRole.sol
+> Compiling .\contracts\coffeaccesscontrol\FarmerRole.sol
+> Compiling .\contracts\coffeaccesscontrol\RetailerRole.sol
+> Compiling .\contracts\coffeaccesscontrol\Roles.sol
+> Compiling .\contracts\coffeebase\SupplyChain.sol
+> Compiling .\contracts\coffeecore\Ownable.sol
+> Artifacts written to C:\dev\blockhain_udacity\codes\4_blockhain_architecture\2_project\build\contracts
+> Compiled successfully using:
+   - solc: 0.8.11+commit.d7f03943.Emscripten.clang
+
+WARNING: Ganache forking only supports EIP-1193-compliant providers. Legacy support for send is currently enabled, but will be removed in a future version _without_ a breaking change. To remove this warning, switch to an EIP-1193 provider. This error is probably caused by an old version of Web3's HttpProvider (or 
+ganache < v7)
+
+eth_getBlockByNumber
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+eth_accounts
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'Migrations'
+   ----------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x0a9a6cd1ff7376c25a5d9e4c0a87a075f2b800f5b55c2ec088bac79e731e620e
+  Contract created: 0x14dad502e84d7f2eafbcafe5c942c3aca08aef35
+  Gas usage: 250142
+  Block number: 10285932
+  Block time: Mon Mar 07 2022 10:26:23 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10285932
+   > block timestamp:     1646637983
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.04600687
+   > gas used:            250142 (0x3d11e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00250142 ETH
+
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x229f5da76d313c65dfe721d13a7051639c1c900bce3aa34a05d7cb77218d84e5
+  Gas usage: 45913
+  Block number: 10285933
+  Block time: Mon Mar 07 2022 10:26:23 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+   -------------------------------------
+   > Total cost:          0.00250142 ETH
+
+eth_getBlockByNumber
+
+2_deploy_contracts.js
+=====================
+eth_accounts
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'FarmerRole'
+   ----------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x895e20f5255e0cf279df43a8165cc3f42570f06ae9af5ae4d20aab05705dee31
+  Contract created: 0xb5ceb5704cfc832e63f97d1f56554bc3e2ca22eb
+  Gas usage: 331326
+  Block number: 10285934
+  Block time: Mon Mar 07 2022 10:26:25 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10285934
+   > block timestamp:     1646637985
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.04223448
+   > gas used:            331326 (0x50e3e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00331326 ETH
+
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'DistributorRole'
+   ---------------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x0d250e0fa96eda71f0b82601ccc3dfcfd529d61bdf467eb2dc4006c977201af0
+  Contract created: 0x686c1aaf5e4ecc589f44345d65584dc10b467e03
+  Gas usage: 300113
+  Block number: 10285935
+  Block time: Mon Mar 07 2022 10:26:27 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10285935
+   > block timestamp:     1646637987
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.03923335
+   > gas used:            300113 (0x49451)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00300113 ETH
+
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'RetailerRole'
+   ------------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x4465939ce8509a0306fd63b6437e5d9b9257af727bce9e2831219fd2ae4fc008
+  Contract created: 0xc7d5efe2a67c65ab79115987062bb85c55dda6b8
+  Gas usage: 331326
+  Block number: 10285936
+  Block time: Mon Mar 07 2022 10:26:29 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10285936
+   > block timestamp:     1646637989
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.03592009
+   > gas used:            331326 (0x50e3e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00331326 ETH
+
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'ConsumerRole'
+   ------------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x378bcb1acdac40fafa510b9952cfe07fcb554907012d7e88cf97f0d2e9728b38
+  Contract created: 0xbb6c2ad2b34d14b5700a5f1171a88ea6a1a313f5
+  Gas usage: 300113
+  Block number: 10285937
+  Block time: Mon Mar 07 2022 10:26:31 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10285937
+   > block timestamp:     1646637991
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.03291896
+   > gas used:            300113 (0x49451)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00300113 ETH
+
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'SupplyChain'
+   -----------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x6b85563a28befeb4661b05e58f77b599c0da1d424c0a8fe57af8a447193be968
+  Contract created: 0x4ed2c1aa9170fea9ff5ceadc770b79f7e4789bf4
+  Gas usage: 2779853
+  Block number: 10285938
+  Block time: Mon Mar 07 2022 10:26:35 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10285938
+   > block timestamp:     1646637995
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.00512043
+   > gas used:            2779853 (0x2a6acd)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02779853 ETH
+
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xbafccd82586826055b78be20a7ef1c6f31f330d889a9016b7c5b53714ee361aa
+  Gas usage: 28813
+  Block number: 10285939
+  Block time: Mon Mar 07 2022 10:26:35 GMT+0300 (GMT+03:00)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+   -------------------------------------
+   > Total cost:          0.04042731 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.04292873 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29941438 (0x1c8debe)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xd13a2e785c832d24be1f2dfd557fb98a83bd0bacb2723b2e855ff20422e03926
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x14dAD502e84d7f2eAFbCAFE5c942C3Aca08aEf35
+   > block number:        10285938
+   > block timestamp:     1646638007
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.04600687
+   > gas used:            250142 (0x3d11e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00250142 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00250142 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'FarmerRole'
+   ----------------------
+   > transaction hash:    0x05bd776d7f320a6cc05cf542485887d7cabfddb7301aae956c86338a250733dc
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xB5ceb5704CFC832E63F97d1f56554BC3E2Ca22eb
+   > block number:        10285940
+   > block timestamp:     1646638037
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.04223448
+   > gas used:            331326 (0x50e3e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00331326 ETH
+
+
+   Deploying 'DistributorRole'
+   ---------------------------
+   > transaction hash:    0x8f90c0e65fb755ba8d3469226a0dafae2ab837fc3a0894fb732a404199ede0ef
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x686C1aaf5e4eCC589F44345D65584DC10B467E03
+   > block number:        10285941
+   > block timestamp:     1646638052
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.03923335
+   > gas used:            300113 (0x49451)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00300113 ETH
+
+
+   Deploying 'RetailerRole'
+   ------------------------
+   > transaction hash:    0xbeb543188d7d36232b31502afa2613d816d0810d77529256897071ddcd581c9a
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xc7d5eFE2a67C65aB79115987062BB85C55dda6B8
+   > block number:        10285942
+   > block timestamp:     1646638067
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.03592009
+   > gas used:            331326 (0x50e3e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00331326 ETH
+
+
+   Deploying 'ConsumerRole'
+   ------------------------
+   > transaction hash:    0xfd9c2554ace1f65f6621413bfae0289847a26026174b772c1c12c4f7f8036bd6
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xBb6C2ad2b34d14b5700a5F1171A88eA6a1a313f5
+   > block number:        10285943
+   > block timestamp:     1646638082
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.03291896
+   > gas used:            300113 (0x49451)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00300113 ETH
+
+
+   Deploying 'SupplyChain'
+   -----------------------
+   > transaction hash:    0x3b8a865ae8800fff75dab9641916b237c880929b71724add620db1521db6576e
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x4ed2c1AA9170FeA9ff5ceadC770B79f7e4789Bf4
+   > block number:        10285944
+   > block timestamp:     1646638097
+   > account:             0xC61E46708820048943CeBa67D6a02fA2316d7066
+   > balance:             3.00512043
+   > gas used:            2779853 (0x2a6acd)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02779853 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04042731 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.04292873 ETH
